@@ -279,3 +279,101 @@ section{
     font-size: 20px;
 }
 /* WHY USE TRACKGENIX? SECTION ENDS*/
+
+/* FORM SECTION */
+.my-form form{
+    background-color: #AACE9B;
+    border-radius: 20px;
+    width: 572px;
+    height: 466px;
+    margin: 25px auto;
+}
+
+.my-form-input{
+    display: inline-block;
+    width: 260px;
+    padding-left: 22px;
+    margin-top: 19px;
+    margin-bottom: 18px;
+}
+
+.my-form input:target,
+.my-form input:focus-visible,
+.my-form input:focus{
+    color: #41426F(255, 255, 255, .5);
+    outline: none;
+}
+
+.my-form label{
+    display: block;
+    margin-bottom: 7px;
+    color: #41426F;
+    font-weight: 500;
+}
+
+.my-form div input{
+    width: 260px;
+    height: 37px;
+    border-radius: 4px;
+    border-color: #41426F;
+    border-width: 1px;
+    background-color: transparent;
+}
+
+.my-form-area{
+    width: 525px;
+    height: 60px;
+    padding-left: 22px;
+    margin-bottom: 100px;
+}
+
+.my-form-area select{
+    width: 525px;
+    height: 37px;
+    border-radius: 4px;
+    background-color: transparent;
+    color: #41426F;
+    font-weight: 700;
+    border-color: #41426F;
+}
+
+.my-form-area select option{
+    background-color: transparent;
+}
+
+textarea{
+    font-family: 'Roboto', sans-serif;
+}
+
+.my-form textarea{
+    width: 536px;
+    height: 103px;
+    margin-right: 15px;
+    margin-left: 22px;
+    padding-left: 10px;
+    background-color: transparent;
+    border-radius: 4px;
+    border-color: #41426F;
+}
+
+.my-form textarea:target,
+.my-form textarea:focus-visible,
+.my-form textarea:focus{
+    color: #41426F(255, 255, 255, .5);
+    outline: none;
+}
+
+.my-form-button{
+    width: 255px;
+    height: 50px;
+    border-radius: 5px;
+    border-color: transparent;
+    margin-top: 20px;
+    margin-left: 303px;
+}
+
+.my-form-button:hover{
+    color: #FFFFFF;
+    background-color: #41426F;
+}
+/* FORM SECTION ENDS */
