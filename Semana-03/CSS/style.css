@@ -413,3 +413,43 @@ textarea{
     margin-left: 20px;
 }
 /* ABOUT US SECTION ENDS */
+
+/* FINAL SECTION */
+.final{
+    display: inline-block;
+    width: 100%;
+}
+
+.final div{
+    display: inline-block;
+    width: 33%;
+    border-right: #41426F solid 2px;
+    margin-top: 50px;
+    padding-left: 50px;
+    margin-bottom: 150px;
+}
+
+.final div h3{
+    font-size: 40px;
+    color: #41426F;
+    font-weight: bold;
+    margin-bottom: 28px;
+}
+
+.final ul{
+    display: inline-block;
+    list-style-image: url('../assets/icons/arrow_Icon.png');
+    margin-left: 25px;
+}
+
+.final li{
+    margin-bottom: 38px;
+}
+
+.final li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #41426F;
+}
+/* FINAL SECTION ENDS */
