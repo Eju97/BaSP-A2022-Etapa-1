@@ -337,6 +337,13 @@ section{
     border-color: #41426F;
 }
 
+.my-form-area select:target,
+.my-form-area select:focus-visible,
+.my-form-area select:focus{
+    color: #41426F(255, 255, 255, .5);
+    outline: none;
+}
+
 .my-form-area select option{
     background-color: transparent;
 }
