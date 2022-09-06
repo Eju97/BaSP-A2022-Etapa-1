@@ -212,3 +212,31 @@ section{
     color: white;
 }
 /* TRACKGENIX MAIN SECTION ENDS*/
+
+/* FUNCTIONALITIES SECTION */
+.functionalities{
+    display: inline-block;
+    width: 49%;
+    margin-top: 70px;
+    padding-bottom: 60px;
+    padding-left: 105px;
+}
+
+.functionalities img{
+    float: left;
+    margin-right: 10px;
+}
+
+.functionalities h3{
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 60px;
+}
+
+.functionalities p{
+    font-size: 18px;
+    margin-left: 70px;
+    margin-right: 116px;
+}
+/* FUNCTIONALITIES SECTION ENDS */
