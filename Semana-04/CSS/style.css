@@ -5,10 +5,34 @@
 }
 
 body{
-    background-color: #41426F;
+    /*background-color: #41426F;*/
     font-family: 'Roboto', sans-serif;
 }
 
 section{
-    border-top: #41426F solid 3px;
+    border-top: #41426F solid 2px;
 }
+
+aside{
+    display: none;
+}
+
+/*@media (min-width: 768px) {
+
+    aside{
+        display: none;
+    }
+
+    img{
+        max-width: 100%;
+    }
+
+}
+
+
+/* TABLET VERSION
+@media (min-width: 1024px){
+    aside{
+        display: initial;
+    }
+}*/

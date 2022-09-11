@@ -1,6 +1,5 @@
 footer {
-    float: right;
-    width: 80%;
+    width: 100%;
 }
 
 footer div{
@@ -14,13 +13,11 @@ footer div ul{
 }
 
 footer div li{
-    display: inline-block;
-    margin-left: 120px;
+    
 }
 
 footer h5{
     float: left;
-    margin-left: 400px;
     color: #FFFFFF;
     font-weight: 500;
 }
