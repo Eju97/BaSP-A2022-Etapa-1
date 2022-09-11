@@ -1,0 +1,15 @@
+header{
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 120px;
+    background-color: #41426F;
+    padding: 60px 0px 60px 36px;
+    font-family: 'Roboto', sans-serif;
+}
+
+header h2{
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: bold;
+}

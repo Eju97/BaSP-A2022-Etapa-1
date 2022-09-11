@@ -1,0 +1,26 @@
+footer {
+    float: right;
+    width: 80%;
+}
+
+footer div{
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+footer div ul{
+    margin-left: 310px;
+    margin-top: 20px;
+}
+
+footer div li{
+    display: inline-block;
+    margin-left: 120px;
+}
+
+footer h5{
+    float: left;
+    margin-left: 400px;
+    color: #FFFFFF;
+    font-weight: 500;
+}
