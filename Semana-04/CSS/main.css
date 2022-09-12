@@ -16,7 +16,7 @@ main p{
 .welcome{
     display: flex;
     flex-direction: column;
-    margin-top: 200px;
+    margin-top: 150px;
     padding-top: 25px;
     padding-bottom: 50px;
 }
@@ -86,21 +86,38 @@ main p{
 
 
 /* FUNCTIONALITIES SECTION */
+.functionalities-container-primary{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.functionalities-container-secondary{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-around;
+}
+
 .functionalities{
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 354px;
     margin-top: 50px;
+    margin-bottom: 50px;
     padding-bottom: 30px;
     /* padding-left: 65px; */
 }
 
 .functionalities img{
-    float: left;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .functionalities h3{
     /* display: inline-block; */
-    font-size: 28px;
+    font-size: 25px;
     font-weight: bold;
     line-height: 60px;
 }
@@ -108,45 +125,66 @@ main p{
 .functionalities p{
     font-size: 18px;
     margin-left: 70px;
-    /*margin-right: 116px; */
 }
 
 /* WHY USE TRACKGENIX? SECTION */
+
+.reasons-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.reasons-container-little{
+    color: #373867;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-around;
+    width: 350px;
+}
+
+.reasons-div{
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+    margin-bottom: 30px;
+}
+
 .reasons h2{
     color: #373867;
-    font-size: 40px;
-    /*width: 377px;*/
+    font-size: 35px;
     font-weight: bold;
     border-bottom: #41426F solid 3px;
     margin-left: 13px;
-    padding-bottom: 10px;
     margin-bottom: 26px;
     margin-top: 40px;
+    padding-bottom: 10px;
+    width: 328px;
 }
 
 .reasons h4{
-    color: #373867;
-    font-size: 22px;
+    margin-left: 5px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.reasons ul{
-    display: inline-block;
-    /*width: 40%;*/
-    margin-left: 86px;
-    list-style-image: url('../assets/icons/arrow_Icon.png');
+/* .reasons ul{
+    margin-left: 37px;
+    list-style-image: url('../assets/icons/arrow-icon.png');
 }
 
 .reasons li{
-    width: 100%;
-    height: 150px;
     padding-bottom: 35px;
-}
+} */
 
 .reasons p{
     color: #373867;
     font-size: 20px;
+    padding-left: 15px;
 }
 
 /* FORM SECTION */
@@ -154,16 +192,14 @@ main p{
     background-color: #AACE9B;
     border-radius: 20px;
     width: 100%;
+    max-width: 480px;
     height: 466px;
     margin: 25px auto;
 }
 
 .my-form-input{
-    display: inline-block;
     width: 100%;
-    padding-left: 22px;
-    margin-top: 19px;
-    margin-bottom: 18px;
+    margin: 18px 0px;
 }
 
 .my-form input:target,
@@ -174,7 +210,6 @@ main p{
 }
 
 .my-form label{
-    display: block;
     margin-bottom: 7px;
     color: #41426F;
     font-weight: 500;
@@ -192,8 +227,7 @@ main p{
 .my-form-area{
     width: 100%;
     height: 60px;
-    padding-left: 22px;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }
 
 .my-form-area select{
@@ -228,9 +262,9 @@ textarea{
 .my-form textarea{
     width: 100%;
     height: 103px;
-    margin-right: 15px;
+    /* margin-right: 15px;
     margin-left: 22px;
-    padding-left: 10px;
+    padding-left: 10px; */
     background-color: transparent;
     border-radius: 4px;
     border-color: #41426F;
@@ -244,8 +278,8 @@ textarea{
 }
 
 .my-form-button{
-    width: 100%;
-    height: 50px;
+    width: 100px;
+    height: 24px;
     border-radius: 5px;
     border-color: transparent;
     margin-top: 20px;
