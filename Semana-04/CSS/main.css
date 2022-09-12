@@ -18,16 +18,27 @@ main p{
     flex-direction: column;
     margin-top: 150px;
     padding-top: 25px;
-    padding-bottom: 50px;
-}
-
-.welcome-div-1{
-    /*width: 40%;*/
-    padding-left: 10px;
     margin-bottom: 50px;
 }
 
-.welcome-div-2{
+.welcome-div-desktop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.welcome-div-desktop-1{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.welcome-div-desktop-2{
+    display: none;
+}
+
+.welcome-div-mobile{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -41,11 +52,6 @@ main p{
     border-radius: 5px;
     /* margin: auto; */
 
-}
-
-/* DISPLAY NONE? */
-.welcome img{
-    width: 100%;
 }
 
 .welcome h1{
@@ -66,16 +72,21 @@ main p{
     margin-bottom: 5px;
 }
 
-.welcome-button{
+.welcome-button, .welcome-button-1{
     text-decoration: none;
     color: black;
     font-weight: bold;
     text-align: center;
     border-radius: 5px;
+    width: 147px;
     height: 47px;
     padding: 15px 30px;
     background-color: #FFFFFF;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 10px 0 rgba(0,0,0,0.19);
+}
+
+.welcome-button-1{
+    display: none;
 }
 
 .welcome a:hover{
@@ -83,6 +94,9 @@ main p{
     color: white;
 }
 
+.main-trackgenix-img{
+    display: none;
+}
 
 
 /* FUNCTIONALITIES SECTION */
@@ -128,10 +142,13 @@ main p{
 }
 
 /* WHY USE TRACKGENIX? SECTION */
+.reasons{
+    margin-bottom: 50px;
+}
 
 .reasons-container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
 }
@@ -189,17 +206,29 @@ main p{
 
 /* FORM SECTION */
 .my-form form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     background-color: #AACE9B;
     border-radius: 20px;
-    width: 100%;
+    /* width: 100%; */
     max-width: 480px;
     height: 466px;
     margin: 25px auto;
+    padding: 0px 15px;
+}
+
+.my-form-button-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
 }
 
 .my-form-input{
-    width: 100%;
+    display: flex;
+    flex-direction: column;
     margin: 18px 0px;
+    width: 225px;
 }
 
 .my-form input:target,
@@ -216,7 +245,8 @@ main p{
 }
 
 .my-form div input{
-    width: 100%;
+    /* width: 215px; */
+    margin-right: 10px;
     height: 37px;
     border-radius: 4px;
     border-color: #41426F;
@@ -278,6 +308,7 @@ textarea{
 }
 
 .my-form-button{
+    align-self: flex-end;
     width: 100px;
     height: 24px;
     border-radius: 5px;
@@ -293,55 +324,60 @@ textarea{
 
 /* ABOUT US SECTION */
 .about{
-    display: inline-block;
-    margin-bottom: 43px;
+    margin-bottom: 36px;
 }
 
-.about div{
-    float: left;
-    margin-top: 45px;
-    width: 100%;
-    margin-left: 20px;
+
+.about-container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 25px;
 }
 
-.about div p{
+.about-container p{
     color: #373867;
-    font-size: 24px;
-    padding-right: 136px;
+    font-size: 12px;
+    width: 30%;
+    /* padding-right: 136px; */
 }
 
 .about h2{
     font-size: 30px;
     color: #373867;
     font-weight: bold;
+    margin-top: 30px;
     margin-bottom: 15px;
 }
 
 .about img{
-    width: 100%;
-    margin-top: 45px;
-    margin-bottom: 20px;
+    width: 60%;
+    height: 171px;
+    border-radius: 10px;
 }
 
 .about-p{
     color: #373867;
-    font-size: 24px;
-    margin-left: 20px;
+    font-size: 12px;
 }
 
 /* FINAL SECTION */
 .final{
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
     width: 100%;
 }
 
 .final div{
-    display: inline-block;
-    width: 100%;
-    border-right: #373867 solid 2px;
+    width: 220px;
+    border-bottom: #41426F solid 2px;
     margin-top: 50px;
-    padding-left: 50px;
-    margin-bottom: 150px;
+    padding-right: 30px;
+    /* margin-right: 74px; */
+    margin-bottom: 25px;
 }
 
 .final div h3{
@@ -352,8 +388,7 @@ textarea{
 }
 
 .final ul{
-    display: inline-block;
-    list-style-image: url('../assets/icons/arrow_Icon.png');
+    list-style-image: url('../assets/icons/arrow-icon.png');
     margin-left: 25px;
 }
 
