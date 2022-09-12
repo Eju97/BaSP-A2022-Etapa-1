@@ -4,11 +4,10 @@ header{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 200px;
+    height: 140px;
     background-color: #41426F;
     padding-left: 15px;
     padding-right: 15px;
-    /*padding: 60px 0px 60px 36px;*/
     font-family: 'Roboto', sans-serif;
 }
 
