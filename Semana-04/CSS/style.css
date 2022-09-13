@@ -20,9 +20,7 @@ aside{
 /* MEDIA 768px - Tablet */
 @media (min-width: 768px) {
 
-    main{
-    background-color: red;
-}
+
     .welcome-div-desktop-2{
         display: initial;
     }
@@ -64,7 +62,6 @@ aside{
 
     main{
         margin-left: 20%;
-        background-color: yellow;
     }
 
     .welcome p{
