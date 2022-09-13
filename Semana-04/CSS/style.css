@@ -17,6 +17,7 @@ aside{
     display: none;
 }
 
+/* MEDIA 768px - Tablet */
 @media (min-width: 768px) {
 
     main{
@@ -46,7 +47,13 @@ aside{
     }
 }
 
+/* Media 1024 Desktop */
 @media (min-width: 1024px){
+
+    .icon-bar{
+        display: initial;
+    }
+
     aside{
         display: initial;
     }

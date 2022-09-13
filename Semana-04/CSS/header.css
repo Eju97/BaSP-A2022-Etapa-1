@@ -11,7 +11,8 @@ header{
     font-family: 'Roboto', sans-serif;
 }
 
-header .icon-bar{
+.icon-bar{
+    display: none;
     color: white;
     font-size: 48px;
 }
