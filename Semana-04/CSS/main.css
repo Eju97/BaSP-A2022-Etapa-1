@@ -1,3 +1,7 @@
+section{
+    border-top: #41426F solid 2px;
+}
+
 main{
     display: flex;
     flex-direction: column;
@@ -30,6 +34,7 @@ main p{
 .welcome-div-desktop-1{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     padding-left: 10px;
     padding-right: 20px;
 }
@@ -50,8 +55,6 @@ main p{
     background-repeat: no-repeat;
     background-size: 100%;
     border-radius: 5px;
-    /* margin: auto; */
-
 }
 
 .welcome h1{
@@ -94,11 +97,6 @@ main p{
     color: white;
 }
 
-.main-trackgenix-img{
-    display: none;
-}
-
-
 /* FUNCTIONALITIES SECTION */
 .functionalities-container-primary{
     display: flex;
@@ -122,7 +120,6 @@ main p{
     margin-top: 50px;
     margin-bottom: 50px;
     padding-bottom: 30px;
-    /* padding-left: 65px; */
 }
 
 .functionalities img{
@@ -130,7 +127,6 @@ main p{
 }
 
 .functionalities h3{
-    /* display: inline-block; */
     font-size: 25px;
     font-weight: bold;
     line-height: 60px;
@@ -148,7 +144,7 @@ main p{
 
 .reasons-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
 }
@@ -160,13 +156,13 @@ main p{
     flex-wrap: wrap;
     align-content: space-between;
     justify-content: space-around;
-    width: 350px;
 }
 
 .reasons-div{
     display: flex;
     flex-wrap: wrap;
-    width: 350px;
+    width: 400px;
+    margin-top: 50px;
     margin-bottom: 30px;
 }
 
@@ -189,15 +185,6 @@ main p{
     margin-bottom: 10px;
 }
 
-/* .reasons ul{
-    margin-left: 37px;
-    list-style-image: url('../assets/icons/arrow-icon.png');
-}
-
-.reasons li{
-    padding-bottom: 35px;
-} */
-
 .reasons p{
     color: #373867;
     font-size: 20px;
@@ -209,16 +196,15 @@ main p{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    justify-content: space-between;
     background-color: #AACE9B;
     border-radius: 20px;
-    /* width: 100%; */
     max-width: 480px;
-    height: 466px;
     margin: 25px auto;
-    padding: 0px 15px;
+    padding: 15px;
 }
 
-.my-form-button-container{
+.my-form-input-container{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -228,7 +214,7 @@ main p{
     display: flex;
     flex-direction: column;
     margin: 18px 0px;
-    width: 225px;
+    width: 100%;
 }
 
 .my-form input:target,
@@ -245,7 +231,6 @@ main p{
 }
 
 .my-form div input{
-    /* width: 215px; */
     margin-right: 10px;
     height: 37px;
     border-radius: 4px;
@@ -292,9 +277,6 @@ textarea{
 .my-form textarea{
     width: 100%;
     height: 103px;
-    /* margin-right: 15px;
-    margin-left: 22px;
-    padding-left: 10px; */
     background-color: transparent;
     border-radius: 4px;
     border-color: #41426F;
@@ -314,7 +296,7 @@ textarea{
     border-radius: 5px;
     border-color: transparent;
     margin-top: 20px;
-    /*margin-left: 303px;*/
+    margin-bottom: 10px;
 }
 
 .my-form-button:hover{
@@ -339,8 +321,7 @@ textarea{
 .about-container p{
     color: #373867;
     font-size: 12px;
-    width: 30%;
-    /* padding-right: 136px; */
+    width: 55%;
 }
 
 .about h2{
@@ -352,7 +333,7 @@ textarea{
 }
 
 .about img{
-    width: 60%;
+    width: 40%;
     height: 171px;
     border-radius: 10px;
 }
@@ -372,11 +353,13 @@ textarea{
 }
 
 .final div{
-    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
     border-bottom: #41426F solid 2px;
     margin-top: 50px;
     padding-right: 30px;
-    /* margin-right: 74px; */
     margin-bottom: 25px;
 }
 
@@ -389,7 +372,6 @@ textarea{
 
 .final ul{
     list-style-image: url('../assets/icons/arrow-icon.png');
-    margin-left: 25px;
 }
 
 .final li{

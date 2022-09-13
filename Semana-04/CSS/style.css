@@ -5,16 +5,7 @@
 }
 
 body{
-    /*background-color: #41426F;*/
     font-family: 'Roboto', sans-serif;
-}
-
-section{
-    border-top: #41426F solid 2px;
-}
-
-aside{
-    display: none;
 }
 
 /* MEDIA 768px - Tablet */
@@ -27,7 +18,6 @@ aside{
 
     .welcome-div-desktop-2 img{
         width: 382px;
-        height: 285px;
     }
 
     .welcome-div-mobile{
@@ -37,9 +27,26 @@ aside{
     .welcome-button-1{
         display: initial;
         align-self: flex-end;
+        justify-self: flex-end;
+    }
+
+    .reasons-div{
+        width: 485px;
+    }
+
+    .my-form-button{
+        width: 255px;
+        height: 50px;
+        margin-bottom: 5px;
+
+    }
+
+    .my-form-input{
+        max-width: 50%;
     }
 
     .final div{
+        max-width: 33%;
         border-right: #41426F solid 2px;
         border-bottom: none;
     }
@@ -48,16 +55,12 @@ aside{
 /* Media 1024 Desktop */
 @media (min-width: 1024px){
 
-    .icon-bar{
-        display: initial;
+    header .icon-bar{
+        display: none;
     }
 
     aside{
         display: initial;
-    }
-
-    aside nav a{
-    padding: 15px 56px;
     }
 
     main{
@@ -71,11 +74,14 @@ aside{
 
     .welcome-div-desktop-1{
         width: 50%;
-        height: 100%;
     }
 
     .welcome-div-desktop-2 img{
         width: 100%;
+    }
+
+    .reasons-div{
+        width: 350px;
     }
 
     .about-container{
