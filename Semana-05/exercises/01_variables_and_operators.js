@@ -11,7 +11,7 @@ var FullName = nombre + ' ' + apellido;
 console.log('1.B.: ' + FullName);
 
 // 1. C.
-var firstString = 'Radium'
-var secondString = 'Rocket'
+var firstString = 'Radium';
+var secondString = 'Rocket';
 var thirdString = firstString.length + secondString.length;
 console.log('1.C.: ' + 'cantidad de letras ' + thirdString);
