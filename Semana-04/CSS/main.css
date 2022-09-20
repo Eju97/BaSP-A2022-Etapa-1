@@ -3,8 +3,6 @@ section{
 }
 
 main{
-    display: flex;
-    flex-direction: column;
     background-color: #FFFFFF;
     padding-top: 52px;
     padding-right: 30px;
@@ -18,8 +16,6 @@ main p{
 
 /* TRACKGENIX MAIN SECTION */
 .welcome{
-    display: flex;
-    flex-direction: column;
     margin-top: 150px;
     padding-top: 25px;
     margin-bottom: 50px;
@@ -75,7 +71,7 @@ main p{
     margin-bottom: 5px;
 }
 
-.welcome-button, .welcome-button-1{
+.welcome-btn, .welcome-btn-1{
     text-decoration: none;
     color: black;
     font-weight: bold;
@@ -88,7 +84,7 @@ main p{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 10px 0 rgba(0,0,0,0.19);
 }
 
-.welcome-button-1{
+.welcome-btn-1{
     display: none;
 }
 
@@ -98,14 +94,12 @@ main p{
 }
 
 /* FUNCTIONALITIES SECTION */
-.functionalities-container-primary{
-    display: flex;
-    flex-direction: column;
+.functionalities-container{
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.functionalities-container-secondary{
+.functionalities-subcontainer{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -149,7 +143,7 @@ main p{
     justify-content: space-around;
 }
 
-.reasons-container-little{
+.reasons-subcontainer{
     color: #373867;
     display: flex;
     flex-direction: row;
@@ -344,7 +338,7 @@ textarea{
 }
 
 /* FINAL SECTION */
-.final{
+.final-container{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -352,7 +346,7 @@ textarea{
     width: 100%;
 }
 
-.final div{
+.final-container div{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -363,22 +357,22 @@ textarea{
     margin-bottom: 25px;
 }
 
-.final div h3{
+.final-container div h3{
     font-size: 40px;
     color: #373867;
     font-weight: bold;
     margin-bottom: 28px;
 }
 
-.final ul{
+.final-container ul{
     list-style-image: url('../assets/icons/arrow-icon.png');
 }
 
-.final li{
+.final-container li{
     margin-bottom: 38px;
 }
 
-.final li a{
+.final-container li a{
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;

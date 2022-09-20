@@ -1,12 +1,10 @@
 aside{
     display: none;
+    flex: 1 0 20%;
     background-color: #41426F;
-    position: fixed;
-    top: 130px;
+    margin-top: 140px;
     padding-left: 17px;
     padding-right: 17px;
-    width: 20%;
-    height: 100%;
 }
 
 aside h3{
