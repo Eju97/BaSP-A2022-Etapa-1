@@ -1,0 +1,380 @@
+section{
+    border-top: #41426F solid 2px;
+}
+
+main{
+    background-color: #FFFFFF;
+    padding-top: 52px;
+    padding-right: 30px;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+
+main p{
+    color: #41426F;
+}
+
+/* TRACKGENIX MAIN SECTION */
+.welcome{
+    margin-top: 150px;
+    padding-top: 25px;
+    margin-bottom: 50px;
+}
+
+.welcome-div-desktop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.welcome-div-desktop-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.welcome-div-desktop-2{
+    display: none;
+}
+
+.welcome-div-mobile{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 215px;
+    width: 100%;
+    padding-bottom: 18px;
+    padding-right: 10px;
+    background-image: url("../assets/img/Trackgenix1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 5px;
+}
+
+.welcome h1{
+    color: #373867;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.welcome h2{
+    color: #373867;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.welcome p{
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.welcome-btn, .welcome-btn-1{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    width: 147px;
+    height: 47px;
+    padding: 15px 30px;
+    background-color: #FFFFFF;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 10px 0 rgba(0,0,0,0.19);
+}
+
+.welcome-btn-1{
+    display: none;
+}
+
+.welcome a:hover{
+    background-color: #AACE9B;
+    color: white;
+}
+
+/* FUNCTIONALITIES SECTION */
+.functionalities-container{
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.functionalities-subcontainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-around;
+}
+
+.functionalities{
+    display: flex;
+    flex-wrap: wrap;
+    width: 354px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+}
+
+.functionalities img{
+    margin-right: 5px;
+}
+
+.functionalities h3{
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 60px;
+}
+
+.functionalities p{
+    font-size: 18px;
+    margin-left: 70px;
+}
+
+/* WHY USE TRACKGENIX? SECTION */
+.reasons{
+    margin-bottom: 50px;
+}
+
+.reasons-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.reasons-subcontainer{
+    color: #373867;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-around;
+}
+
+.reasons-div{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.reasons h2{
+    color: #373867;
+    font-size: 35px;
+    font-weight: bold;
+    border-bottom: #41426F solid 3px;
+    margin-left: 13px;
+    margin-bottom: 26px;
+    margin-top: 40px;
+    padding-bottom: 10px;
+    width: 328px;
+}
+
+.reasons h4{
+    margin-left: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.reasons p{
+    color: #373867;
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+/* FORM SECTION */
+.my-form form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #AACE9B;
+    border-radius: 20px;
+    max-width: 480px;
+    margin: 25px auto;
+    padding: 15px;
+}
+
+.my-form-input-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+}
+
+.my-form-input{
+    display: flex;
+    flex-direction: column;
+    margin: 18px 0px;
+    width: 100%;
+}
+
+.my-form input:target,
+.my-form input:focus-visible,
+.my-form input:focus{
+    color: #41426F(255, 255, 255, .5);
+    outline: none;
+}
+
+.my-form label{
+    margin-bottom: 7px;
+    color: #41426F;
+    font-weight: 500;
+}
+
+.my-form div input{
+    margin-right: 10px;
+    height: 37px;
+    border-radius: 4px;
+    border-color: #41426F;
+    border-width: 1px;
+    background-color: transparent;
+}
+
+.my-form-area{
+    width: 100%;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.my-form-area select{
+    width: 100%;
+    height: 37px;
+    border-radius: 4px;
+    background-color: transparent;
+    color: #41426F;
+    font-weight: 700;
+    border-color: #41426F;
+}
+
+.my-form-area select:target,
+.my-form-area select:focus-visible,
+.my-form-area select:focus{
+    color: #41426F(255, 255, 255, .5);
+    outline: none;
+}
+
+.my-form-area select option{
+    background-color: transparent;
+}
+
+textarea{
+    font-family: 'Roboto', sans-serif;
+}
+
+.my-form{
+    width: 100%;
+}
+
+.my-form textarea{
+    width: 100%;
+    height: 103px;
+    background-color: transparent;
+    border-radius: 4px;
+    border-color: #41426F;
+}
+
+.my-form textarea:target,
+.my-form textarea:focus-visible,
+.my-form textarea:focus{
+    color: #41426F(255, 255, 255, .5);
+    outline: none;
+}
+
+.my-form-button{
+    align-self: flex-end;
+    width: 100px;
+    height: 24px;
+    border-radius: 5px;
+    border-color: transparent;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.my-form-button:hover{
+    color: #FFFFFF;
+    background-color: #41426F;
+}
+
+/* ABOUT US SECTION */
+.about{
+    margin-bottom: 36px;
+}
+
+
+.about-container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.about-container p{
+    color: #373867;
+    font-size: 12px;
+    width: 55%;
+}
+
+.about h2{
+    font-size: 30px;
+    color: #373867;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.about img{
+    width: 40%;
+    height: 171px;
+    border-radius: 10px;
+}
+
+.about-p{
+    color: #373867;
+    font-size: 12px;
+}
+
+/* FINAL SECTION */
+.final-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.final-container div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    border-bottom: #41426F solid 2px;
+    margin-top: 50px;
+    padding-right: 30px;
+    margin-bottom: 25px;
+}
+
+.final-container div h3{
+    font-size: 40px;
+    color: #373867;
+    font-weight: bold;
+    margin-bottom: 28px;
+}
+
+.final-container ul{
+    list-style-image: url('../assets/icons/arrow-icon.png');
+}
+
+.final-container li{
+    margin-bottom: 38px;
+}
+
+.final-container li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #373867;
+}
