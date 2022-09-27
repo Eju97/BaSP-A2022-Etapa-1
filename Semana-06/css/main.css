@@ -228,7 +228,7 @@ main p{
     margin-right: 10px;
     height: 37px;
     border-radius: 4px;
-    border-color: #41426F;
+    /* border-color: #41426F; */
     border-width: 1px;
     background-color: transparent;
 }
@@ -273,7 +273,6 @@ textarea{
     height: 103px;
     background-color: transparent;
     border-radius: 4px;
-    border-color: #41426F;
 }
 
 .my-form textarea:target,
@@ -296,6 +295,19 @@ textarea{
 .my-form-button:hover{
     color: #FFFFFF;
     background-color: #41426F;
+}
+
+.border-error{
+    border: red 2px solid;
+}
+
+.border-correct{
+    border: green 2px solid;
+}
+
+.font-error{
+    color: red;
+    font-size: 13px;
 }
 
 /* ABOUT US SECTION */

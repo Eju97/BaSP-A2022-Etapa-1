@@ -8,6 +8,7 @@
         <meta name="description" content="Trackgenix is a webpage that eases the time
         tracking of your employees on each project and work team">
         <link rel="stylesheet" href="../css/reset.css">
+        <script src="../javascript/contact.js"></script>
         <script src="https://kit.fontawesome.com/f84ecae10b.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="../css/header.css">
         <link rel="stylesheet" href="../css/sidebar.css">
@@ -186,16 +187,16 @@
                                 <div class="my-form-area">
                                     <label for="ContactArea">Contact Area</label>
                                         <select name="ContactArea" id="ContactArea">
-                                            <option value="">Business</option>
-                                            <option value="">Human Resources</option>
-                                            <option value="">Systems</option>
+                                            <option value="Business">Business</option>
+                                            <option value="Human Resources">Human Resources</option>
+                                            <option value="Systems">Systems</option>
                                         </select>
                                 </div>
                                 <div>
                                     <label class="my-form-input" for="Message">Message</label>
-                                    <textarea name="Message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+                                    <textarea id="Message" name="Message" cols="30" rows="10" placeholder="Enter your message"></textarea>
                                 </div>
-                                <input class="my-form-button" type="submit" id="Message" value="Send">
+                                <input class="my-form-button" type="submit" id="SubmitBtn" value="Send">
                             </form>
                         </section>
                         <section class="about">
