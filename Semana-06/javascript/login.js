@@ -1,7 +1,5 @@
 window.onload = function(){
 var InputValue = [];
-InputValue[0] = 'Error! This field must be filled';
-InputValue[1] = 'Error! This field must be filled';
 
 // Email Validation
 var emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
@@ -14,12 +12,10 @@ InputEmail.onblur = function(){
         InputEmail.classList.add("border-error");
         InputEmailError.textContent = '*Insert an email';
         InputEmail.insertAdjacentElement('afterend', InputEmailError);
-        InputValue[0] = "Error!: Email field is empty"
     } else if (!emailExpression.test(InputEmail.value)){
         InputEmail.classList.add("border-error");
         InputEmailError.textContent = "*Insert a valid email";
         InputEmail.insertAdjacentElement('afterend', InputEmailError);
-        InputValue[0] = "Error!: Email invalid";
     } else{
         InputEmail.classList.add("border-correct");
         InputValue[0] = InputEmail.value;
@@ -42,22 +38,18 @@ InputPassword.onblur = function(){
         InputPassword.classList.add("border-error");
         InputPasswordError.textContent = '*A password is required';
         InputPassword.insertAdjacentElement('afterend', InputPasswordError);
-        InputValue[1] = 'Error!: The password field is empty';
     } else if(InputPassword.value.length < 8){
         InputPassword.classList.add("border-error");
         InputPasswordError.textContent = '*The password must be 8 characters long';
         InputPassword.insertAdjacentElement('afterend', InputPasswordError);
-        InputValue[1] = 'Error!: The password must have 8 characters or more';
     } else if(!NumberCheck(InputPassword.value)){
         InputPassword.classList.add("border-error");
         InputPasswordError.textContent = '*The password must contain at least one number';
         InputPassword.insertAdjacentElement('afterend', InputPasswordError);
-        InputValue[1] = 'Error!: The password must have at least one number';
     } else if (!LetterCheck(InputPassword.value)){
         InputPassword.classList.add("border-error");
         InputPasswordError.textContent = '*The password must contain at least one letter';
         InputPassword.insertAdjacentElement('afterend', InputPasswordError);
-        InputValue[1] = 'Error!: The password must have at leaste one letter';
     } else if ((LetterCheck(InputPassword.value)) && (NumberCheck(InputPassword.value))){
         InputPassword.classList.add("border-correct");
         InputValue[1] = InputPassword.value;
@@ -96,8 +88,23 @@ function NumberCheck(numberString){
 
 // LogIn button validation
 var loginButton = document.getElementById('loginbtn');
-loginButton.onclick = function(e){
-    e.preventDefault();
-    alert('Email: ' + InputValue[0] + '\n' + 'Password: ' + InputValue[1] );
-};
+    loginButton.onclick = function(e){
+        e.preventDefault();
+        if(InputValue.includes(InputEmail.value) &&
+        InputValue.includes(InputPassword.value)){
+            alert('Email: ' + InputValue[0] + '\n' + 'Password: ' + InputValue[1] );
+        }
+        else if (InputValue.length == 0 ){
+            alert('Error! Fields are empty or must be completed correctly. Try again');
+            InputEmail.onblur();
+            InputPassword.onblur();
+        }
+        else if (!(InputValue.includes(InputEmail.value)) || !(InputValue.includes(InputPassword.value))){
+            alert('Both fields must be validated');
+            InputEmail.onblur();
+            InputPassword.onblur();
+        } else{
+            alert('ERROR! Try again');
+        };
+    };
 };
