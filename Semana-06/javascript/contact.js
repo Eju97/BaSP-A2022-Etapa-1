@@ -130,7 +130,7 @@ SendButton.onclick = function(e){
         InputValue.includes(InputEmail.value) &&
         InputValue.includes(InputContact.value) &&
         InputValue.includes(InputMessage.value)){
-            console.log('Name: ' + InputValue[0] + '\n' +
+            alert('Name: ' + InputValue[0] + '\n' +
             'Email: ' + InputValue[1] + '\n' +
             'Contact Area: ' + InputValue[2] + '\n' +
             'Message: ' + InputValue[3]);
@@ -147,5 +147,3 @@ SendButton.onclick = function(e){
         };
     };
 };
-
-
