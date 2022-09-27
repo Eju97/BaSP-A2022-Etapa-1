@@ -11,6 +11,7 @@ How to access the files:
 
 2- Open the link [JavaScript Exercises (week 05)](https://eju97.github.io/BaSP-A2022-Etapa-1/Semana-05/)
 
+3- Open the link [JavaScript Login and SignUp Validations (week 06)](https://eju97.github.io/BaSP-A2022-Etapa-1/Semana-06/views)
 ## Week 01
     On week 1, My group and I worked on the landing page of the project on Figma, plus the responsive mode por tablet and mobile.
 
@@ -24,7 +25,10 @@ How to access the files:
     On week 4, I worked on the CSS using Flexbox, to give theresponsiveness mode to the HTML file.
 
 ## Week 05
-    On week 5, I have done the JavaScript exercises given, and made thecorrespondent changes to Flexbox.
+    On week 5, I have done the JavaScript exercises given, and made the correspondent changes to Flexbox.
+
+## Week 06
+    On week 6, I have added the LogIn.html file and SignUp.html files. Plus I've added validations to the LogIn, SignUp and the Contact Area using JavaScript. I also managed to do the Bonus task (Contact Form).
 
 ## Author
 _Ernesto Bessone_
