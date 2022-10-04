@@ -369,7 +369,15 @@ inputAddress.onblur = function(){
         inputAddress.classList.add("border-error");
         inputAddressError.textContent = "*Address must contain at least 5 characters";
         inputAddress.insertAdjacentElement('afterend', inputAddressError);
-    } else if(spaceDetecter(inputAddress.value) && ( numberCheck(inputAddress.value) && letterCheck(inputAddress.value))){
+    } else if ((inputAddress.value.indexOf(' ') == 0 || inputAddress.value.indexOf(' ') == inputAddress.value.length - 1)){
+        inputAddress.classList.add("border-error");
+        inputAddressError.textContent = 'error: space cant not be at the start nor the end';
+        inputAddress.insertAdjacentElement('afterend', inputAddressError);
+    } else if (!spaceDetecter(inputAddress.value)){
+        inputAddress.classList.add("border-error");
+        inputAddressError.textContent = 'error: There must be a space in between';
+        inputAddress.insertAdjacentElement('afterend', inputAddressError);
+    } else if(numberCheck(inputAddress.value) && letterCheck(inputAddress.value)){
         inputAddress.classList.add("border-correct");
         inputValue[9] = inputAddress.value;
     } else{
