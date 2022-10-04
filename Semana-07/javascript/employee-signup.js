@@ -90,10 +90,10 @@ function birthDateMDY(date) {
 }
 
 function birthDateDMY(date) {
-    var year = date.substr(6, 4);
-    var month = date.substr(0, 2);
-    var day = date.substr(3, 2);
-    var newDate = year.concat('/', month, '/', day)
+    var year = date.substring(6, 10);
+    var month = date.substring(0, 2);
+    var day = date.substring(3, 5);
+    var newDate = year.concat('-', month, '-', day)
     return newDate;
 }
 
@@ -485,18 +485,23 @@ var createButton = document.getElementById('signupBtn');
         };
     };
 
-
+function getLocalStorage(){
     inputName.value = localStorage.getItem('Name');
     inputSurname.value = localStorage.getItem('Last Name');
     inputEmail.value = localStorage.getItem('Email');
     inputPhone.value = localStorage.getItem('Phone');
     inputPassword.value = localStorage.getItem('Password');
     inputConfirmPassword.value = localStorage.getItem('Password');
-    inputBirthDate.value = birthDateDMY(localStorage.getItem('Birth Date'))
+    inputBirthDate.value = birthDateDMY(localStorage.getItem('Birth Date'));
     inputDNI.value = localStorage.getItem('DNI');
     inputCity.value = localStorage.getItem('City');
     inputAddress.value = localStorage.getItem('Address');
     inputPostal.value = localStorage.getItem('Postal Code');
+}
+
+if (localStorage.length != 0){
+    getLocalStorage()
+};
 
 function promiseSignUp(queryParams){
     var queryParams = 'name=' + inputName.value +
@@ -511,33 +516,28 @@ function promiseSignUp(queryParams){
     '&zip=' + inputPostal.value;
     fetch('https://basp-m2022-api-rest-server.herokuapp.com/signup?' + queryParams)
     .then(function(response){
-        if(response.status >= 400){
-            throw new Error('Bad request - error 400, try again');
-        } else if(response.status >= 500){
-            throw new Error('Bad request - error 500, try again');
-        }
-        else{
-            console.log(response)
             return response.json();
-        }
-    }
-    )
+    })
     .then(function(data){
-        alert('Success: ' + data.success + '\n' + 'Message: ' + data.msg)
-        localStorage.setItem('Name', data.data.name);
-        localStorage.setItem('Last Name', data.data.lastName);
-        localStorage.setItem('Email' , data.data.email);
-        localStorage.setItem('Phone', data.data.phone);
-        localStorage.setItem('Password', data.data.password);
-        localStorage.setItem('Confirm Password', data.data.password);
-        localStorage.setItem('Birth Date', data.data.dob);
-        localStorage.setItem('DNI', data.data.dni);
-        localStorage.setItem('City', data.data.city);
-        localStorage.setItem('Address', data.data.address);
-        localStorage.setItem('Postal Code', data.data.zip);
+        if(data.success){
+            alert('Server Response: \n' + 'Success: ' + data.success + '\n' + 'Message: ' + data.msg)
+            localStorage.setItem('Name', data.data.name);
+            localStorage.setItem('Last Name', data.data.lastName);
+            localStorage.setItem('Email' , data.data.email);
+            localStorage.setItem('Phone', data.data.phone);
+            localStorage.setItem('Password', data.data.password);
+            localStorage.setItem('Confirm Password', data.data.password);
+            localStorage.setItem('Birth Date', data.data.dob);
+            localStorage.setItem('DNI', data.data.dni);
+            localStorage.setItem('City', data.data.city);
+            localStorage.setItem('Address', data.data.address);
+            localStorage.setItem('Postal Code', data.data.zip);
+        } else {
+            throw data;
+        }
     })
     .catch(function(error){
-        console.log(error);
+        alert('Server Response: ERROR! \n' + 'Success: ' + error.success + '\n' + 'Message: ' + error.msg);
     })
 };
 };
