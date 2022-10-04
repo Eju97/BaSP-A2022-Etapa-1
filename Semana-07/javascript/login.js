@@ -92,7 +92,7 @@ var loginButton = document.getElementById('loginbtn');
         e.preventDefault();
         if(inputValue.includes(inputEmail.value) &&
         inputValue.includes(inputPassword.value)){
-            alert('Email: ' + inputValue[0] + '\n' + 'Password: ' + inputValue[1] );
+            alert('Local Response: \n' + 'Email: ' + inputValue[0] + '\n' + 'Password: ' + inputValue[1] );
             return promise();
         }
         else if (inputValue.length == 0 ){
@@ -115,20 +115,17 @@ function promise(){
     var password = inputPassword.value;
     fetch('https://basp-m2022-api-rest-server.herokuapp.com/login?email=' + email + '&password=' + password)
         .then(function(response){
-            if (response.status >= 400){
-                throw new Error('Bad Request 400, try again');
-            } else if(response.status >= 500){
-                throw new Error('Bad Request 500, try again');
-            } else {
-                console.log(response)
                 return response.json()
-            }
         })
         .then(function (data){
-            alert('Success: ' + data.success + '\n' + 'Message: ' + data.msg);
+            if(data.success){
+                alert('Server Response: \n' + 'Login Success: ' + data.success + '\n' + 'Message: ' + data.msg);
+            } else {
+                throw data;
+            }
         })
-        .catch(function(errors){
-            alert(errors);
+        .catch(function(error){
+            alert('Server Response: ERROR! \n' + 'Login Success: ' + error.success + '\n' + 'Message: ' + error.msg);
         })
     };
 };
